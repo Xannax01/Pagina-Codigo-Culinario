@@ -2018,3 +2018,11 @@ window.addEventListener('click', function(event) {
         modal.style.display = 'none';
     }
 });
+
+// Obtener el botón "Cerrar" dentro del modal
+const closeModalBtn = document.getElementById('close-modal-btn');
+
+// Añadir un evento de clic al botón para cerrar el modal
+closeModalBtn.addEventListener('click', function() {
+    modal.style.display = 'none'; // Oculta el modal
+});

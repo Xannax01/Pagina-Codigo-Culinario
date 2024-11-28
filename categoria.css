@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-image: url(imagenes/imagen\ fondo.jpg);
@@ -12,6 +6,8 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilos para el header */
@@ -21,7 +17,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: white;
-    height: 80px;
+    height: 40px;
 }
 
 
@@ -46,7 +42,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
 
 nav ul li a {
@@ -118,6 +114,8 @@ nav ul li a:hover {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 280px;
 }
 
 .image-container {
@@ -128,7 +126,7 @@ nav ul li a:hover {
 
 .image-container img {
     width: 100%;
-    height: 100%;
+    height: 45%;
     object-fit: cover;
     position: relative;
     z-index: 1; 
@@ -143,12 +141,12 @@ nav ul li a:hover {
     z-index: 0;
 }
 
-h2 {
+h3 {
     font-size: 16px;
     margin: 10px 0;
 }
 
-p {
+.parrafo {
     font-size: 12px;
     color: #666;
     padding: 0 10px 20px 10px;
@@ -164,8 +162,9 @@ p {
     display: none;
 }
 
+/* Ventana flotante*/ 
 
-.btn-modal{
+.ventana-modal{
     display: none;
 }
 
@@ -190,7 +189,7 @@ p {
     overflow: auto;
 }
 
-.btn-modal:checked ~ .container-modal{
+.ventana-modal:checked ~ .container-modal{
     display: flex;
 }
 
@@ -245,3 +244,104 @@ p {
         width: 90%;
     } 
 }
+
+
+/* Estilos Responsivos */
+@media (max-width: 1200px) {
+    .recipe-card {
+        width: calc(45% - 20px); /* En pantallas medianas, las tarjetas toman el 45% del ancho */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .recipe-card {
+        width: calc(100% - 20px); /* En pantallas pequeñas, las tarjetas toman el 100% del ancho */
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container input,
+    .search-container button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 14px;
+    }
+
+    .parrafo {
+        font-size: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    .logo {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+}
+

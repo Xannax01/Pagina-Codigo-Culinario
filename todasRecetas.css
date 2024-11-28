@@ -46,7 +46,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
 
 nav ul li a {
@@ -203,6 +203,58 @@ p {
     }
 }
 
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    .logo {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+}
+
+
 
 .modal {
     width: 100%;
@@ -243,6 +295,29 @@ p {
     cursor: pointer;
 }
 
+/* Contenedor del botón */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para el botón "Cerrar" */
+.close-modal-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-modal-btn:hover {
+    background-color: darkorange;
+}
+
 .modal-img {
     width: 50%;
     height: auto;
@@ -265,4 +340,9 @@ p {
 /* Estilo en negrita para las frases específicas */
 .bold-ingredient {
     font-weight: bold;
+}
+
+.linea {
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
 }
