@@ -367,3 +367,53 @@ nav ul li a:hover {
         font-size: 20px;
     }
 }
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    .logo {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+}

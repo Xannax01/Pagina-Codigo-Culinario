@@ -139,3 +139,158 @@ footer {
     margin-top: 15px;
 }
 
+
+/* Ajustes para pantallas de 800px o menos */
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #inicio {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #bloque1 {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #bloque1 h2 {
+        font-size: 50px;
+    }
+
+    #bloque1 p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #bloque2 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #bloque2 .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #bloque2 .imgBx {
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+    }
+
+    #bloque2 .imgBx img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Ajustes para pantallas de 480px o menos */
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #bloque1 h2 {
+        font-size: 30px;
+    }
+
+    #bloque1 p {
+        font-size: 14px;
+    }
+
+    #bloque2 h2 {
+        font-size: 24px;
+    }
+
+    #bloque2 .card {
+        padding: 10px;
+    }
+
+    .content-modal {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .content-modal h2 {
+        font-size: 20px;
+    }
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    .logo {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+}
