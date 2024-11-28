@@ -12,10 +12,3 @@ document.addEventListener("keyup", e=>{
     }
    
 })
-
-function mostrarProcedimiento(procedimiento) {
-    document.getElementById('contenidoProcedimiento').textContent = procedimiento;
-    const modal = new bootstrap.Modal(document.getElementById('modalProcedimiento'));
-    modal.show();
-  }
-  

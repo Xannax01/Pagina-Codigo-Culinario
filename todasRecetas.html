@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Código Culinario</title>
-        <link rel="stylesheet" href="todasRecetas.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas las Recetas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="todasRecetas.css">
+</head>
 <body>
 
     <header>
@@ -18,129 +18,419 @@
         </div>
         <nav>
             <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="categotias.html">Categorías</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categoria.html">Categorías</a></li>
                 <li><a href="Aboutus.html">Conócenos</a></li>
             </ul>
         </nav>
         <div class="search-container">
-            <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
-            <button>Buscar</button>
+            <input type="text" id="buscador" placeholder="Buscar...">
         </div>
     </header>
     
 <div class="cuadroblanco">
     <div class="container">
         <!-- Primera receta -->
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/pollo al curry.jpg" alt="Pollo al curry">
+        <div class="container">
+            <div class="recipe-card" data-id="1">
+                <div class="image-container">
+                    <img src="imagenes/pollo al curry.jpg" alt="Pollo al Curry">
+                </div>
+                <div class="shadow"></div>
+                <h2>Pollo al Curry</h2>
+                <p>Jugoso pollo cocinado en una salsa especiada de curry con leche de coco.</p>
             </div>
-            <div class="shadow"></div>
-            <h2>Pollo al Curry</h2>
-            <p>Jugoso pollo cocinado en una salsa especiada de curry con leche de coco y una mezcla de hierbas aromáticas.</p>
+    
+            <div class="recipe-card" data-id="2">
+                <div class="image-container">
+                    <img src="imagenes/estofado de res.jpg" alt="Estofado de Res">
+                </div>
+                <div class="shadow"></div>
+                <h2>Estofado de Res</h2>
+                <p>Carne de res tierna cocida a fuego lento con papas, zanahorias y una mezcla de hierbas.</p>
+            </div>
+
+            <div class="recipe-card" data-id="3">
+                <div class="image-container">
+                    <img src="imagenes/costillas de cerdo.jpg" alt="costillas de cerdo">
+                </div>
+                <div class="shadow"></div>
+                <h2>Costillas de cerdo</h2>
+                <p>Costillas de cerdo cocinadas a la perfección, bañadas en una salsa barbacoa dulce y ahumada.</p>
+            </div>
+
+            <div class="recipe-card" data-id="4">
+                <div class="image-container">
+                    <img src="imagenes/bistec pimienta.jpg" alt="bistec pimienta">
+                </div>
+                <div class="shadow"></div>
+                <h2>Bistec a la Pimienta</h2>
+                <p>Filete jugoso cubierto con una rica salsa de crema y granos de pimienta negra recién molida.</p>
+            </div>
+    
+            <div class="recipe-card" data-id="5">
+                <div class="image-container">
+                    <img src="imagenes/Buddha Bowl.jpg" alt="Buddha Bowl">
+                </div>
+                <div class="shadow"></div>
+                <h2>Buddha Bowl</h2>
+                <p>Plato saludable y colorido, con arroz, garbanzos, aguacate, vegetales frescos y aderezo tahini.</p>
+            </div>
+    
+            <div class="recipe-card" data-id="6">
+                <div class="image-container">
+                    <img src="imagenes/tarta crema de limon.jpg" alt="tarta de crema de limon ">
+                </div>
+                <div class="shadow"></div>
+                <h2>Tarta Crema de Limon</h2>
+                <p>Postre refrescante con una base crujiente y un relleno cremoso de limón coronado con merengue.</p>
+            </div>
+    
+            <div class="recipe-card" data-id="7">
+                <div class="image-container">
+                    <img src="imagenes/chuletas de coredero.jpg" alt="chuletas de cordero">
+                </div>
+                <div class="shadow"></div>
+                <h2>Chuletas de Cordero</h2>
+                <p>Tiernas chuletas de cordero marinadas en hierbas frescas y cocinadas a la parrilla para un sabor jugoso.</p>
+            </div>
+    
+            <div class="recipe-card" data-id="8">
+                <div class="image-container">
+                    <img src="imagenes/lasaña vegana.jpg" alt="lasaña vegana">
+                </div>
+                <div class="shadow"></div>
+                <h2>Lasaña Vegana</h2>
+                <p>Capas de pasta rellenas de vegetales, salsa de tomate y un cremoso sustituto vegano del queso.</p>
+            </div>
+    
+            <div class="recipe-card" data-id="9">
+                <div class="image-container">
+                    <img src="imagenes/tacos veganos.jpg" alt="tacos veganos">
+                </div>
+                <div class="shadow"></div>
+                <h2>Tacos Veganos</h2>
+                <p>Tortillas suaves rellenas de una mezcla sabrosa de frijoles, aguacate, y vegetales frescos, con un toque de salsa picante.</p>
+            </div>
+    
+            <div class="recipe-card" data-id="10">
+                <div class="image-container">
+                    <img src="imagenes/pollo a la parilla.jpg" alt="Pollo a la Parilla">
+                </div>
+                <div class="shadow"></div>
+                <h2>Pollo a la Parilla</h2>
+                <p>Jugosos trozos de pollo marinados en una mezcla de especias aromáticas, asados lentamente a la perfección sobre fuego, con un toque ahumado y una corteza dorada irresistible.</p>
+            </div>
+    
+            <div class="recipe-card" data-id="11">
+                <div class="image-container">
+                    <img src="imagenes/Sopa de Verduras.jpg" alt="Sopa Verduras">
+                </div>
+                <div class="shadow"></div>
+                <h2>Sopa de Verduras</h2>
+                <p>Un caldo reconfortante lleno de vegetales frescos, hierbas aromáticas y un toque de especias, perfecto para cualquier ocasión.</p>
+            </div>
+    
+            <div class="recipe-card" data-id="12">
+                <div class="image-container">
+                    <img src="imagenes/Pasta Carbonara.jpg" alt="Pasta Carbonara">
+                </div>
+                <div class="shadow"></div>
+                <h2>Pasta Carbonara</h2>
+                <p>Pasta al dente mezclada con una cremosa salsa de huevo, queso y trozos de panceta dorada.</p>
+            </div>
+
+            <div class="recipe-card" data-id="13">
+                <div class="image-container">
+                    <img src="imagenes/Ensalada César.jpg" alt="Ensalada César">
+                </div>
+                <div class="shadow"></div>
+                <h2>Ensalada César</h2>
+                <p>Crujientes hojas de lechuga, aderezo cremoso y trocitos de pan tostado, coronados con queso parmesano.</p>
+            </div>
+
+            <div class="recipe-card" data-id="14">
+                <div class="image-container">
+                    <img src="imagenes/Brownies de Chocolate.jpg" alt="Brownies de Chocolate">
+                </div>
+                <div class="shadow"></div>
+                <h2>Brownies de Chocolate</h2>
+                <p>Suaves y densos, con un intenso sabor a chocolate y un toque de dulzura irresistible.</p>
+            </div>
+
+            <div class="recipe-card" data-id="15">
+                <div class="image-container">
+                    <img src="imagenes/Galletas de Avena y Pasas.jpg" alt="Galletas de Avena y Pasas">
+                </div>
+                <div class="shadow"></div>
+                <h2>Galletas de Avena y Pasas</h2>
+                <p>Galletas crujientes y saludables con avena y pasas.</p>
+            </div>
+
+            <div class="recipe-card" data-id="16">
+                <div class="image-container">
+                    <img src="imagenes/Muffins de Zanahoria y Nuez.jpg" alt="Muffins de Zanahoria y Nuez">
+                </div>
+                <div class="shadow"></div>
+                <h2>Muffins de Zanahoria y Nuez</h2>
+                <p>Muffins suaves con zanahoria rallada y nueces crujientes.</p>
+            </div>
+
+            <div class="recipe-card" data-id="17">
+                <div class="image-container">
+                    <img src="imagenes/Smoothie de Fresas y Plátano.jpg" alt="Smoothie de Fresas y Plátano">
+                </div>
+                <div class="shadow"></div>
+                <h2>Smoothie de Fresas y Plátano</h2>
+                <p>Bebida refrescante y saludable con fresas y plátano.</p>
+            </div>
+
+            <div class="recipe-card" data-id="18">
+                <div class="image-container">
+                    <img src="imagenes/Ensalada de Quinoa y Aguacate.jpg" alt="Ensalada de Quinoa y Aguacate">
+                </div>
+                <div class="shadow"></div>
+                <h2>Ensalada de Quinoa y Aguacate</h2>
+                <p>Ensalada fresca y ligera con quinoa, aguacate y vegetales.</p>
+            </div>
+
+            <div class="recipe-card" data-id="19">
+                <div class="image-container">
+                    <img src="imagenes/Arroz con Pollo.jpg" alt="Arroz con Pollo">
+                </div>
+                <div class="shadow"></div>
+                <h2>Arroz con Pollo</h2>
+                <p>Plato tradicional con arroz sazonado y trozos de pollo jugoso.</p>
+            </div>
+
+            <div class="recipe-card" data-id="20">
+                <div class="image-container">
+                    <img src="imagenes/Crema de Calabaza.jpg" alt="Crema de Calabaza">
+                </div>
+                <div class="shadow"></div>
+                <h2>Crema de Calabaza</h2>
+                <p>Suave y cremosa sopa a base de calabaza.</p>
+            </div>
+
+            <div class="recipe-card" data-id="21">
+                <div class="image-container">
+                    <img src="imagenes/Tacos de Carne.jpg" alt="Tacos de Carne">
+                </div>
+                <div class="shadow"></div>
+                <h2>Tacos de Carne</h2>
+                <p>Tacos clásicos con carne sazonada y tus acompañamientos favoritos.</p>
+            </div>
+
+            <div class="recipe-card" data-id="22">
+                <div class="image-container">
+                    <img src="imagenes/Chili con Carne.jpg" alt="Chili con Carne">
+                </div>
+                <div class="shadow"></div>
+                <h2>Chili con Carne</h2>
+                <p>Plato reconfortante y picante con carne molida y frijoles.</p>
+            </div>
+
+            <div class="recipe-card" data-id="23">
+                <div class="image-container">
+                    <img src="imagenes/Pizza de Pollo al Pesto.jpg" alt="Pizza de Pollo al Pesto">
+                </div>
+                <div class="shadow"></div>
+                <h2>Pizza de Pollo al Pesto</h2>
+                <p>Pizza casera con pollo, pesto, tomate y queso mozzarella.</p>
+            </div>
+
+            <div class="recipe-card" data-id="24">
+                <div class="image-container">
+                    <img src="imagenes/Tarta de Limón y Merengue.jpg" alt="Tarta de Limón y Merengue">
+                </div>
+                <div class="shadow"></div>
+                <h2>Tarta de Limón y Merengue</h2>
+                <p>Tarta dulce con un cremoso relleno de limón y un merengue suave.</p>
+            </div>
+
+            <div class="recipe-card" data-id="25">
+                <div class="image-container">
+                    <img src="imagenes/Hamburguesas Veganas de Garbanzo.jpg" alt="Hamburguesas Veganas de Garbanzo">
+                </div>
+                <div class="shadow"></div>
+                <h2>Hamburguesas Veganas de Garbanzo</h2>
+                <p>Hamburguesas vegetarianas hechas con garbanzo, ideales para una comida saludable.</p>
+            </div>
+
+            <div class="recipe-card" data-id="26">
+                <div class="image-container">
+                    <img src="imagenes/Crepes de Nutella y Fresas.jpg" alt="Crepes de Nutella y Fresas">
+                </div>
+                <div class="shadow"></div>
+                <h2>Crepes de Nutella y Fresas</h2>
+                <p>Deliciosos crepes rellenos de Nutella y fresas frescas.</p>
+            </div>
+
+            <div class="recipe-card" data-id="27">
+                <div class="image-container">
+                    <img src="imagenes/Sopa de Lentejas con Espinacas.jpg" alt="Sopa de Lentejas con Espinacas">
+                </div>
+                <div class="shadow"></div>
+                <h2>Sopa de Lentejas con Espinacas</h2>
+                <p>Sopa nutritiva de lentejas con espinacas frescas y especias.</p>
+            </div>
+
+            <div class="recipe-card" data-id="28">
+                <div class="image-container">
+                    <img src="imagenes/Sopa de Lentejas.jpg" alt="Sopa de Lentejas">
+                </div>
+                <div class="shadow"></div>
+                <h2>Sopa de Lentejas</h2>
+                <p>Plato reconfortante hecho con lentejas y vegetales frescos.</p>
+            </div>
+
+            <div class="recipe-card" data-id="29">
+                <div class="image-container">
+                    <img src="imagenes/Ceviche de Camaron.jpg" alt="Ceviche de Camaron">
+                </div>
+                <div class="shadow"></div>
+                <h2>Ceviche de Camarón</h2>
+                <p>Camarones frescos marinados en jugo de limón con cebolla y cilantro.</p>
+            </div>
+
+            <div class="recipe-card" data-id="30">
+                <div class="image-container">
+                    <img src="imagenes/Pizza Margarita.jpg" alt="Pizza Margarita">
+                </div>
+                <div class="shadow"></div>
+                <h2>Pizza Margarita</h2>
+                <p>Clásica pizza italiana con queso mozzarella y albahaca fresca.</p>
+            </div>
+
+            <div class="recipe-card" data-id="31">
+                <div class="image-container">
+                    <img src="imagenes/Lasagna de Carne.jpg" alt="Lasagna de Carne">
+                </div>
+                <div class="shadow"></div>
+                <h2>Lasagna de Carne</h2>
+                <p>Capas de pasta, carne y queso gratinado al horno.</p>
+            </div>
+
+            <div class="recipe-card" data-id="32">
+                <div class="image-container">
+                    <img src="imagenes/Sushi Roll de Aguacate y Salmón.jpg" alt="Sushi Roll de Aguacate y Salmón">
+                </div>
+                <div class="shadow"></div>
+                <h2>Sushi Roll de Aguacate y Salmón</h2>
+                <p>Sushi fresco con aguacate y salmón, acompañado de arroz de sushi y algas nori.</p>
+            </div>
+
+            <div class="recipe-card" data-id="33">
+                <div class="image-container">
+                    <img src="imagenes/Paella Valenciana.jpg" alt="Paella Valenciana">
+                </div>
+                <div class="shadow"></div>
+                <h2>Paella Valenciana</h2>
+                <p>Clásica paella española con mariscos, pollo, conejo y verduras.</p>
+            </div>
+
+            <div class="recipe-card" data-id="34">
+                <div class="image-container">
+                    <img src="imagenes/Mole Poblano.jpg" alt="Mole Poblano">
+                </div>
+                <div class="shadow"></div>
+                <h2>Mole Poblano</h2>
+                <p>Mole tradicional mexicano, con chocolate, chiles y especias, ideal para acompañar pollo.</p>
+            </div>
+
+            <div class="recipe-card" data-id="35">
+                <div class="image-container">
+                    <img src="imagenes/Curry Tailandés de Coco.jpg" alt="Curry Tailandés de Coco">
+                </div>
+                <div class="shadow"></div>
+                <h2>Curry Tailandés de Coco</h2>
+                <p>Curry tailandés cremoso con leche de coco, pollo y verduras.</p>
+            </div>
+
+            <div class="recipe-card" data-id="36">
+                <div class="image-container">
+                    <img src="imagenes/Falafel.jpg" alt="Falafel">
+                </div>
+                <div class="shadow"></div>
+                <h2>Falafel</h2>
+                <p>Albóndigas fritas de garbanzo, especias y hierbas, típicas de la cocina de Medio Oriente.</p>
+            </div>
+
+            <div class="recipe-card" data-id="37">
+                <div class="image-container">
+                    <img src="imagenes/Ratatouille.jpg" alt="Ratatouille">
+                </div>
+                <div class="shadow"></div>
+                <h2>Ratatouille</h2>
+                <p>Un guiso francés con verduras asadas como berenjena, calabacín y pimientos, perfecto como plato principal o acompañante.</p>
+            </div>
+
+            <div class="recipe-card" data-id="38">
+                <div class="image-container">
+                    <img src="imagenes/Shakshuka.jpg" alt="Shakshuka">
+                </div>
+                <div class="shadow"></div>
+                <h2>Shakshuka</h2>
+                <p>Plato tradicional del Medio Oriente con huevos escalfados en una salsa picante de tomate, pimientos y especias.</p>
+            </div>
+
+            <div class="recipe-card" data-id="39">
+                <div class="image-container">
+                    <img src="imagenes/Tacos de Carnitas.jpg" alt="Tacos de Carnitas">
+                </div>
+                <div class="shadow"></div>
+                <h2>Tacos de Carnitas</h2>
+                <p>Tacos mexicanos rellenos de carne de cerdo cocida lentamente, servidos con cebolla, cilantro y salsa.</p>
+            </div>
+
+            <div class="recipe-card" data-id="40">
+                <div class="image-container">
+                    <img src="imagenes/Pav Bhaji.jpg" alt="Pav Bhaji">
+                </div>
+                <div class="shadow"></div>
+                <h2>Pav Bhaji</h2>
+                <p>Plato típico de la India con un guiso de verduras picantes, servido con pan mantecoso.</p>
+            </div>
+
+            <div class="recipe-card" data-id="41">
+                <div class="image-container">
+                    <img src="imagenes/Bibimbap Coreano.jpg" alt="Bibimbap Coreano">
+                </div>
+                <div class="shadow"></div>
+                <h2>Bibimbap Coreano</h2>
+                <p>Plato coreano tradicional que combina arroz, vegetales, carne y huevo en una mezcla deliciosa.</p>
+            </div>
+
+            <div class="recipe-card" data-id="42">
+                <div class="image-container">
+                    <img src="imagenes/Baklava Turca.jpg" alt="Baklava Turca">
+                </div>
+                <div class="shadow"></div>
+                <h2>Baklava Turca</h2>
+                <p>Postre turco hecho con capas de masa filo, nueces y un jarabe dulce con toque de agua de rosas.</p>
+            </div>
         </div>
 
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/estofado de res.jpg" alt="estofado de res">
-            </div>
-            <div class="shadow"></div>
-            <h2>Estofado de Res</h2>
-            <p>Carne de res tierna cocida a fuego lento con papas, zanahorias y una mezcla de hierbas en un caldo sabroso.</p>
-        </div>
 
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/costillas de cerdo.jpg" alt="costillas de cerdo">
-            </div>
-            <div class="shadow"></div>
-            <h2>Costillas de cerdo</h2>
-            <p>Costillas de cerdo cocinadas a la perfección, bañadas en una salsa barbacoa dulce y ahumada.</p>
-        </div>
 
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/bistec pimienta.jpg" alt="bistec pimienta">
-            </div>
-            <div class="shadow"></div>
-            <h2>Bistec a la Pimienta</h2>
-            <p>Filete jugoso cubierto con una rica salsa de crema y granos de pimienta negra recién molida.</p>
-        </div>
 
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/Buddha Bowl.jpg" alt="Buddha Bowl">
-            </div>
-            <div class="shadow"></div>
-            <h2>Buddha Bowl</h2>
-            <p>Plato saludable y colorido, con arroz, garbanzos, aguacate, vegetales frescos y aderezo tahini.</p>
-        </div>
 
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/tarta crema de limon.jpg" alt="tarta de crema de limon ">
-            </div>
-            <div class="shadow"></div>
-            <h2>Tarta Crema de Limon</h2>
-            <p>Postre refrescante con una base crujiente y un relleno cremoso de limón coronado con merengue.</p>
-        </div>
-
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/chuletas de coredero.jpg" alt="chuletas de cordero">
-            </div>
-            <div class="shadow"></div>
-            <h2>Chuletas de Cordero</h2>
-            <p>Tiernas chuletas de cordero marinadas en hierbas frescas y cocinadas a la parrilla para un sabor jugoso.</p>
-        </div>
-
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/lasaña vegana.jpg" alt="lasaña vegana">
-            </div>
-            <div class="shadow"></div>
-            <h2>Lasaña Vegana</h2>
-            <p>Capas de pasta rellenas de vegetales, salsa de tomate y un cremoso sustituto vegano del queso.</p>
-        </div>
-
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/tacos veganos.jpg" alt="tacos veganos">
-            </div>
-            <div class="shadow"></div>
-            <h2>Tacos Veganos</h2>
-            <p>Tortillas suaves rellenas de una mezcla sabrosa de frijoles, aguacate, y vegetales frescos, con un toque de salsa picante.</p>
-        </div>
-
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/tacos veganos.jpg" alt="tacos veganos">
-            </div>
-            <div class="shadow"></div>
-            <h2>Tacos Veganos</h2>
-            <p>Tortillas suaves rellenas de una mezcla sabrosa de frijoles, aguacate, y vegetales frescos, con un toque de salsa picante.</p>
-        </div>
-
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/tacos veganos.jpg" alt="tacos veganos">
-            </div>
-            <div class="shadow"></div>
-            <h2>Tacos Veganos</h2>
-            <p>Tortillas suaves rellenas de una mezcla sabrosa de frijoles, aguacate, y vegetales frescos, con un toque de salsa picante.</p>
-        </div>
-
-        <div class="recipe-card">
-            <div class="image-container">
-                <img src="imagenes/tacos veganos.jpg" alt="tacos veganos">
-            </div>
-            <div class="shadow"></div>
-            <h2>Tacos Veganos</h2>
-            <p>Tortillas suaves rellenas de una mezcla sabrosa de frijoles, aguacate, y vegetales frescos, con un toque de salsa picante.</p>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2> <!-- Título de la receta -->
+            <img id="modal-img" src="" alt="" class="modal-img"> <!-- Imagen de la receta -->
+            <div id="modal-description"></div> <!-- Descripción de la receta -->
+            <h3>Ingredientes:</h3>
+            <ul id="modal-ingredients"></ul> <!-- Ingredientes -->
+            <h3>Instrucciones:</h3>
+            <ol id="modal-instructions"></ol> <!-- Instrucciones -->
         </div>
     </div>
-</div>
+
+    <script src="todasRecetas.js"></script>
+
 <script src="script.js"></script>
 </body>
 </html>

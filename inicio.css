@@ -2,9 +2,15 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(fondo-img/fondo-alimentos-para-el-corazon-.jpg);
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
 }
 
 header {
@@ -33,6 +39,7 @@ header {
   font-weight: 400;
   font-style: normal;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -54,28 +61,32 @@ nav ul li a:hover {
 }
     
 #inicio {
-    margin: 1%;
-    margin-top: 5px;
-    width: 960px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
     display: flex;
+    
 }
 
 /* Sección de hero */
 #bloque1 {
     text-align: left;
-    padding: 50px;
+    padding: 50px; 
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    margin-right: 10px;
+    width: 900px; 
+    margin: auto;
 }
 
 #bloque1 h2 {
     font-size: 80px;
-    margin-bottom: 10px;
+    color: black;
 }
 
 #bloque1 p {
     font-size: 30px;
-    color: gray;
-    width: 800px;
+    color: black;
 }
 
 #bloque1 button {
@@ -88,16 +99,18 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+
 /* Sección de recetas */
 #bloque2 {
    position:relative;
-   width: 1100px;
    justify-content: center;
    align-items: center;
-   flex-wrap: wrap;
-   padding: 30px;
-   margin: 0;
-   background-color: white;
+   padding: 10px;
+   background: rgba(255, 255, 255, 0.5);
+   border-radius: 5px;
+   backdrop-filter: blur(3px);
+   margin: auto;
+   margin-top: 10px;
 
 }
 
@@ -105,6 +118,8 @@ nav ul li a:hover {
     text-align: center;
     font-size: 40px;
     margin: 0px;
+    color: black;
+
 }
 
 .nombre-receta,
@@ -123,7 +138,7 @@ nav ul li a:hover {
     border-radius: 5px;
     width: 308px;
     position: relative;
-    height: 400px;
+    height: 350px;
     background: #f39c12;
     margin: 30px 10px;
     padding: 20px 15px;
@@ -141,6 +156,7 @@ nav ul li a:hover {
     top: -60px;
     left: 20px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 1.2);
+    
 }
 
 #bloque2 .card .imgBx img{
@@ -150,6 +166,7 @@ nav ul li a:hover {
 
 .imgBx:hover img{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .botonRecetas{
@@ -163,3 +180,190 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Ventana flotante*/ 
+
+#btn-modal{
+    display: none;
+}
+
+#img-modal{
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    align-items: center;
+
+}
+
+.container-modal{
+    width: 100%;
+    max-height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items:flex-start;
+    z-index: 100;
+    overflow: auto;
+}
+
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+.content-modal{
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.content-modal h2{
+    margin-bottom: 15px;
+}
+
+.content-modal .linea{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar label:hover{
+    background-color: #FF7E1B;
+}
+
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    } 
+}
+
+/* Ajustes para pantallas de 800px o menos */
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #inicio {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #bloque1 {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #bloque1 h2 {
+        font-size: 50px;
+    }
+
+    #bloque1 p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #bloque2 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #bloque2 .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #bloque2 .imgBx {
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+    }
+
+    #bloque2 .imgBx img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Ajustes para pantallas de 480px o menos */
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #bloque1 h2 {
+        font-size: 30px;
+    }
+
+    #bloque1 p {
+        font-size: 14px;
+    }
+
+    #bloque2 h2 {
+        font-size: 24px;
+    }
+
+    #bloque2 .card {
+        padding: 10px;
+    }
+
+    .content-modal {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .content-modal h2 {
+        font-size: 20px;
+    }
+}
